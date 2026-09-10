@@ -1,0 +1,43 @@
+{
+  "name": "@trade-3commas/trade-3commas-sdk",
+  "version": "2.1.2",
+  "description": "3Commas SDK",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://trade.3commas.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3commas-io/trade-3commas-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3commas-io/trade-3commas-sdk/issues"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "npm",
+    "3commas"
+  ],
+  "author": "3Commas",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0",
+    "axios": "^1.6.0",
+    "crypto-js": "^4.2.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "tsx": "^4.23.12",
+    "typescript": "^5.3.0"
+  }
+}
