@@ -19,7 +19,7 @@ const EntryBestBidAskLimitSettingsSchema = ExitBestBidAskLimitSettingsSchema.mer
 export const EntryOrderTypeSchema = z.discriminatedUnion('orderType', [
     z.object({
         orderType: z.literal(OrderType.BestBidAskLimit),
-        orderTypeSettings: EntryBestBidAskLimitSettingsSchema.nullable(),
+        orderTypeSettings: EntryBestBidAskLimitSettingsSchema.nullish(),
     }),
 
     z.object({
@@ -31,7 +31,7 @@ export const EntryOrderTypeSchema = z.discriminatedUnion('orderType', [
 export const TakeProfitOrderTypeSchema = z.discriminatedUnion('takeProfitOrderType', [
     z.object({
         takeProfitOrderType: z.literal(ExitOrderType.BestBidAskLimit),
-        takeProfitOrderTypeSettings: ExitBestBidAskLimitSettingsSchema.nullable(),
+        takeProfitOrderTypeSettings: ExitBestBidAskLimitSettingsSchema.nullish(),
     }),
 
     z.object({
@@ -48,7 +48,7 @@ export const TakeProfitOrderTypeSchema = z.discriminatedUnion('takeProfitOrderTy
 export const StopLossOrderTypeSchema = z.discriminatedUnion('stopLossOrderType', [
     z.object({
         stopLossOrderType: z.literal(ExitOrderType.BestBidAskLimit),
-        stopLossOrderTypeSettings: ExitBestBidAskLimitSettingsSchema.nullable(),
+        stopLossOrderTypeSettings: ExitBestBidAskLimitSettingsSchema.nullish(),
     }),
 
     z.object({
